@@ -1,13 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BthomeComponent } from './bootstrapUI/bthome/bthome.component';
+import { AboutComponent } from './coreUI/about/about.component';
+import { CoreDashboardComponent } from './coreUI/core-dashboard/core-dashboard.component';
+import { CoresalesComponent } from './coreUI/coresales/coresales.component';
 import { HomeComponent } from './coreUI/home/home.component';
 
 
 const routes: Routes = [
+ 
   {
     path:'uihome',
     component:HomeComponent
+  },
+  {
+    path:'uihome/dashboard',
+    component:CoreDashboardComponent
+  },
+  {
+    path:'uihome/sales-detail',
+    component:CoresalesComponent
   },
   {
     path:'bthome',

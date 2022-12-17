@@ -10,6 +10,9 @@ import { ContactComponent } from './coreUI/contact/contact.component';
 import { BtcontractComponent } from './bootstrapUI/btcontract/btcontract.component';
 import { BtaboutComponent } from './bootstrapUI/btabout/btabout.component';
 import { BthomeComponent } from './bootstrapUI/bthome/bthome.component';
+import { LoginComponent } from './coreUI/login/login.component';
+import { CoreDashboardComponent } from './coreUI/core-dashboard/core-dashboard.component';
+import { CoresalesComponent } from './coreUI/coresales/coresales.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { BthomeComponent } from './bootstrapUI/bthome/bthome.component';
     ContactComponent,
     BtcontractComponent,
     BtaboutComponent,
-    BthomeComponent
+    BthomeComponent,
+    LoginComponent,
+    CoreDashboardComponent,
+    CoresalesComponent
   ],
   imports: [
     BrowserModule,
