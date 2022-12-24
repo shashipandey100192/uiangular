@@ -13,6 +13,8 @@ import { BthomeComponent } from './bootstrapUI/bthome/bthome.component';
 import { LoginComponent } from './coreUI/login/login.component';
 import { CoreDashboardComponent } from './coreUI/core-dashboard/core-dashboard.component';
 import { CoresalesComponent } from './coreUI/coresales/coresales.component';
+import { CorePurchaseComponent } from './coreUI/core-dashboard/core-purchase/core-purchase.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,14 @@ import { CoresalesComponent } from './coreUI/coresales/coresales.component';
     BthomeComponent,
     LoginComponent,
     CoreDashboardComponent,
-    CoresalesComponent
+    CoresalesComponent,
+    CorePurchaseComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
