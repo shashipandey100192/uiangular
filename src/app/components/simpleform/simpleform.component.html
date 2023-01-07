@@ -1,0 +1,54 @@
+
+
+
+<form (ngSubmit)="myform(abc)" #abc="ngForm">
+<div class="container p-3">
+<div class="row border">
+    <div class="col-6">
+       <input type="text" class="form-control" placeholder="firstname" ngModel name="firstname" required>
+    </div>
+    <div class="col-6">
+        <input type="text" class="form-control" placeholder="lastname" ngModel name="lastname">
+     </div>
+     <div class="col-6">
+        <input type="email" class="form-control" placeholder="email" ngModel name="myemail">
+     </div>
+     <div class="col-6">
+        <input type="date" class="form-control" placeholder="date" ngModel name="mydate">
+     </div>
+     <div class="col-12 text-center" >
+        <button class="btn btn-primary">submit</button>
+     </div>
+    
+</div>
+</div>
+
+</form>
+
+
+
+
+
+<form (ngSubmit)="myform1(abc)" #abc1="ngForm">
+    <div class="container p-3">
+    <div class="row border">
+        <div class="col-6">
+           <input type="text" class="form-control" placeholder="firstname" ngModel name="mydata.firstname" required>
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="lastname" ngModel name="mydata.lastname">
+         </div>
+         <div class="col-6">
+            <input type="email" class="form-control" placeholder="email" ngModel name="mydata.myemail">
+         </div>
+         <div class="col-6">
+            <input type="date" class="form-control" placeholder="date" ngModel name="mydata.mydate">
+         </div>
+         <div class="col-12 text-center" >
+            <button class="btn btn-primary">submit</button>
+         </div>
+        
+    </div>
+    </div>
+    
+    </form>

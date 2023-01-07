@@ -1,34 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BthomeComponent } from './bootstrapUI/bthome/bthome.component';
-import { AboutComponent } from './coreUI/about/about.component';
-import { CoreDashboardComponent } from './coreUI/core-dashboard/core-dashboard.component';
-import { CorePurchaseComponent } from './coreUI/core-dashboard/core-purchase/core-purchase.component';
-import { CoresalesComponent } from './coreUI/coresales/coresales.component';
-import { HomeComponent } from './coreUI/home/home.component';
+import { MyreactiveformComponent } from './components/myreactiveform/myreactiveform.component';
+import { SimpleformComponent } from './components/simpleform/simpleform.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 
 const routes: Routes = [
- 
   {
-    path:'uihome',
-    component:HomeComponent
+    path:'',
+    component:WelcomeComponent
   },
   {
-    path:'uihome/dashboard',
-    component:CoreDashboardComponent
+    path:'simpleform',
+    component:SimpleformComponent
   },
   {
-    path:'uihome/sales-detail',
-    component:CoresalesComponent
-  },
-  {
-    path:'bthome',
-    component:BthomeComponent
-  },
-  {
-    path:'uihome/purchase',
-    component:CorePurchaseComponent
+    path:'reactiveform',
+    component:MyreactiveformComponent
   }
 ];
 
