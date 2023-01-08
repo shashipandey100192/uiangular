@@ -9,6 +9,7 @@ import { SimpleformComponent } from './components/simpleform/simpleform.componen
 import { MyreactiveformComponent } from './components/myreactiveform/myreactiveform.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormvalidationComponent } from './components/formvalidation/formvalidation.component';
 
 
 
@@ -18,7 +19,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     MynavbarComponent,
     SimpleformComponent,
     MyreactiveformComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FormvalidationComponent
 
   ],
   imports: [

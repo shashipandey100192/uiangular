@@ -10,14 +10,13 @@ export class SimpleformComponent {
 
   myform(xyz:NgForm)
   {
-    console.log(xyz.value);
+    console.log(xyz);
   }
 
   public mydata:any={};
 
-  myform1(xyz:NgForm)
+  mysubmitdata()
   {
-    console.log(xyz.value);
     console.log(this.mydata);
   }
 

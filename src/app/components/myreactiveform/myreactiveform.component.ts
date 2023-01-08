@@ -8,17 +8,18 @@ import {FormControl,FormGroup} from '@angular/forms';
 })
 export class MyreactiveformComponent {
   myform=new FormGroup({
-    firstname:new FormControl(''),
-    lastname:new FormControl(''),
-    email:new FormControl(''),
+    firstname:new FormControl('kumar'),
+    lastname:new FormControl('singh'),
+    email:new FormControl('kumar@gmail.com'),
     cusdate:new FormControl(''),
   })
 
+public a:string ='';
 
   mysubmit()
   {
     console.log(this.myform.value);
-
+    
   }
 
 }

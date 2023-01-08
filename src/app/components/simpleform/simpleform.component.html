@@ -5,21 +5,24 @@
 <div class="container p-3">
 <div class="row border">
     <div class="col-6">
-       <input type="text" class="form-control" placeholder="firstname" ngModel name="firstname" required>
+       <input type="text" class="form-control" placeholder="firstname" ngModel name="firstname" required error.invalid>
+      
     </div>
     <div class="col-6">
-        <input type="text" class="form-control" placeholder="lastname" ngModel name="lastname">
+        <input type="text" class="form-control" placeholder="lastname" ngModel name="lastname" required>
+       
      </div>
      <div class="col-6">
-        <input type="email" class="form-control" placeholder="email" ngModel name="myemail">
+        <input type="email" class="form-control" placeholder="email" ngModel name="myemail" required>
+        
      </div>
      <div class="col-6">
-        <input type="date" class="form-control" placeholder="date" ngModel name="mydate">
+        <input type="date" class="form-control" placeholder="date" ngModel name="mydate" required>
+        
      </div>
      <div class="col-12 text-center" >
         <button class="btn btn-primary">submit</button>
      </div>
-    
 </div>
 </div>
 
@@ -29,23 +32,23 @@
 
 
 
-<form (ngSubmit)="myform1(abc)" #abc1="ngForm">
+<form>
     <div class="container p-3">
     <div class="row border">
         <div class="col-6">
-           <input type="text" class="form-control" placeholder="firstname" ngModel name="mydata.firstname" required>
+           <input type="text" class="form-control" placeholder="firstname" [(ngModel)]="mydata.firs" name="first">
         </div>
         <div class="col-6">
-            <input type="text" class="form-control" placeholder="lastname" ngModel name="mydata.lastname">
+            <input type="text" class="form-control" placeholder="lastname" [(ngModel)]="mydata.last" name="last">
          </div>
          <div class="col-6">
-            <input type="email" class="form-control" placeholder="email" ngModel name="mydata.myemail">
+            <input type="email" class="form-control" placeholder="email" [(ngModel)]="mydata.email" name="email">
          </div>
          <div class="col-6">
-            <input type="date" class="form-control" placeholder="date" ngModel name="mydata.mydate">
+            <input type="date" class="form-control" placeholder="date" [(ngModel)]="mydata.date" name="date">
          </div>
          <div class="col-12 text-center" >
-            <button class="btn btn-primary">submit</button>
+            <button type="button" (click)="mysubmitdata()" class="btn btn-primary">submit</button>
          </div>
         
     </div>
