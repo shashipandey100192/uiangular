@@ -10,6 +10,8 @@ import { MyreactiveformComponent } from './components/myreactiveform/myreactivef
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FormvalidationComponent } from './components/formvalidation/formvalidation.component';
+import { FullComponent } from './layout/full/full.component';
+import { BlankComponent } from './layout/blank/blank.component';
 
 
 
@@ -20,7 +22,9 @@ import { FormvalidationComponent } from './components/formvalidation/formvalidat
     SimpleformComponent,
     MyreactiveformComponent,
     WelcomeComponent,
-    FormvalidationComponent
+    FormvalidationComponent,
+    FullComponent,
+    BlankComponent
 
   ],
   imports: [

@@ -7,11 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./formvalidation.component.scss']
 })
 export class FormvalidationComponent {
+  
+  
 
 
-
-  myform(xyz:NgForm)
-  {
-    console.log(xyz);
-  }
 }

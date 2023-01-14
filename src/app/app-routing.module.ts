@@ -1,28 +1,47 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormvalidationComponent } from './components/formvalidation/formvalidation.component';
-import { MyreactiveformComponent } from './components/myreactiveform/myreactiveform.component';
-import { SimpleformComponent } from './components/simpleform/simpleform.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { BlankComponent } from './layout/blank/blank.component';
+import { FullComponent } from './layout/full/full.component';
+
 
 
 const routes: Routes = [
-  {
-    path:'',
-    component:WelcomeComponent
-  },
-  {
-    path:'simpleform',
-    component:SimpleformComponent
-  },
-  {
-    path:'reactiveform',
-    component:MyreactiveformComponent
-  },
-  {
-    path:'validation',
-    component:FormvalidationComponent
-  }
+{
+  path:'',
+  component:BlankComponent,
+  children:[
+    {
+      path:'',
+      redirectTo:'auth',
+      pathMatch:'full'
+    },
+    {
+      path:'auth',
+      loadChildren: ()=> import('./modules/auth/auth.module').then(m => m.AuthModule)
+    }
+  ]
+},
+{
+  path:'',
+  component:FullComponent,
+  children:[
+    {
+      path:'',
+      redirectTo:'dashboard',
+      pathMatch:'full'
+    },
+    {
+      path:'dashboard',
+      loadChildren: ()=> import('./modules/dashoard/dashoard.module').then(m => m.DashoardModule)
+    }
+
+  ]
+
+}
+
+
+
+
 ];
 
 @NgModule({
