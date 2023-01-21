@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="loginsubmit()">
+    <div class="container">
+        <div class="row border p-4">
+            <div class="col-6">
+                <label>Username</label>
+                <input
+                    type="text"
+                    formControlName="username"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+                />
+                <div *ngIf="submitted && f.username.errors" class="errormsg">
+                    <div *ngIf="f.username.errors.required">Username is required</div>
+                    <div *ngIf="f.username.errors.minlength">
+                      Username must be at least 6 characters
+                    </div>
+                    <div *ngIf="f.username.errors.maxlength">
+                      Username must not exceed 20 characters
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+

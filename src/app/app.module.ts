@@ -12,6 +12,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FormvalidationComponent } from './components/formvalidation/formvalidation.component';
 import { FullComponent } from './layout/full/full.component';
 import { BlankComponent } from './layout/blank/blank.component';
+import { MynavComponent } from './modules/sharecomponents/mynav/mynav.component';
 
 
 
@@ -24,8 +25,8 @@ import { BlankComponent } from './layout/blank/blank.component';
     WelcomeComponent,
     FormvalidationComponent,
     FullComponent,
-    BlankComponent
-
+    BlankComponent,
+    MynavComponent
   ],
   imports: [
     BrowserModule,
