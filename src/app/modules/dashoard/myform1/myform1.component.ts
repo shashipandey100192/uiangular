@@ -14,9 +14,12 @@ export class Myform1Component {
   //   cusdate:new FormControl(''),
   // })
   submitted = false;
-
+  mystorage:any;
   form = new FormGroup({
-    username: new FormControl('',[Validators.required,Validators.minLength(5),Validators.maxLength(20)]),
+    // username: new FormControl('ooo',Validators.required),
+    username: new FormControl('ooo',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]),
+    firstname:new FormControl('',[Validators.required]),
+    lastname:new FormControl('sing',[Validators.required])
   });
   
   
@@ -31,7 +34,21 @@ export class Myform1Component {
     }
   
     console.log(this.form.value);
+    // localStorage.setItem("mydata","[{name:'ravi',age:'50',height:'10ft'}]");
+    localStorage.setItem("mydatas",JSON.stringify(this.form.value));
   }
+
+  getValues()
+  {
+    this.mystorage=localStorage.getItem('mydatas');
+    console.log(this.mystorage);
+  }
+
+
+
+
+ 
+
   
   
 
