@@ -1,0 +1,70 @@
+<h1>directive works!</h1>
+{{mydata}}
+<!-- <ul>
+    <li *ngFor="let detail of mydata">
+        {{detail.age}}
+    </li>
+</ul> -->
+
+
+<!-- <ul>
+    <li *ngFor="let detail of mydata; let i=index;let b=odd; let e=even">
+        {{detail.age}}
+        {{i}}
+        {{b}}
+        {{e}}
+    </li>
+</ul> -->
+
+
+<!-- <ul>
+    <li *ngFor="let detail of mydata; let i=index">
+            {{i}}
+    </li>
+</ul> -->
+<!-- <table class="table border bg-primary" style="width:500px" >
+    <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tbody *ngFor="let tdata of mydata; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{tdata.name}}</td>
+        <td>{{tdata.age}}</td>
+    </tbody>
+    
+</table> -->
+
+<!-- <select>
+    <option *ngFor="let b of mydata">
+        {{b.name}}
+    </option>
+</select>
+<select>
+    <option *ngFor="let b of mydata">
+        {{b.age}}
+    </option>
+</select> -->
+
+<input type="text" #one (keypress)="abc()"> 
+
+<ul [ngSwitch]="name">
+    <li *ngSwitchCase="'ravi'">ravi</li>
+    <li *ngSwitchCase="'mohan'">mohan</li>
+    <li *ngSwitchCase="'pankaj'">panakj</li>
+    <li *ngSwitchCase="'mamata'">mamata</li>
+    <li *ngSwitchDefault="no match">no match data</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+

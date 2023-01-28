@@ -42,6 +42,9 @@ export class Myform1Component {
   {
     this.mystorage=localStorage.getItem('mydatas');
     console.log(this.mystorage);
+    // console.log(JSON.stringify(this.mystorage));
+    // console.log({myd:JSON.stringify(this.mystorage)})
+
   }
 
 
