@@ -1,0 +1,27 @@
+<p>apidetail works!</p>
+<!-- <ul>
+    <li *ngFor="let a of posts">
+        {{a.title}}
+
+    </li>
+</ul> -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let a of posts">
+      <tr>
+        <th scope="row">{{a.id}}</th>
+        <td>{{a.title}}</td>
+        <td>{{a.body}}</td>
+        <td>{{a.userId}}</td>
+      </tr>
+     
+    </tbody>
+  </table>

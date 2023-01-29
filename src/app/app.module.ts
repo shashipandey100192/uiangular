@@ -13,7 +13,7 @@ import { FormvalidationComponent } from './components/formvalidation/formvalidat
 import { FullComponent } from './layout/full/full.component';
 import { BlankComponent } from './layout/blank/blank.component';
 import { MynavComponent } from './modules/sharecomponents/mynav/mynav.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +32,8 @@ import { MynavComponent } from './modules/sharecomponents/mynav/mynav.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

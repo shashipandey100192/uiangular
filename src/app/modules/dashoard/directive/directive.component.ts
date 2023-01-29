@@ -36,10 +36,7 @@ mydata=[
 
 name='mohan';
 
-abc()
-{
-  console.log("hi");
-}
+
 
 }
 

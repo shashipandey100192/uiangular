@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+import { ApidetailComponent } from './apidetail/apidetail.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { Myform1Component } from './myform1/myform1.component';
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'directive',
     component:DirectiveComponent
+  },
+  {
+    path:'apidetail',
+    component:ApidetailComponent
   }
 
 ];
