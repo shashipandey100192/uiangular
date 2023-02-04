@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DirectiveComponent } from './directive/directive.component';
 import { ApidetailComponent } from './apidetail/apidetail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     Myform1Component,
     DirectiveComponent,
     ApidetailComponent,
+    ProductsComponent,
  
   ],
   imports: [

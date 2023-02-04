@@ -5,7 +5,11 @@
 
     </li>
 </ul> -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
 
+    
 <table class="table">
     <thead>
       <tr>
@@ -13,6 +17,7 @@
         <th scope="col">First</th>
         <th scope="col">Last</th>
         <th scope="col">Handle</th>
+        <th> Action</th>
       </tr>
     </thead>
     <tbody *ngFor="let a of posts">
@@ -21,7 +26,11 @@
         <td>{{a.title}}</td>
         <td>{{a.body}}</td>
         <td>{{a.userId}}</td>
+        <td> <button type="button" class="btn btn-sm btn-danger" [routerLink]="['/dashboard/apidetail',a.id]">submit {{a.id}}</button></td>
       </tr>
      
     </tbody>
   </table>
+</div>
+</div>
+</div>
