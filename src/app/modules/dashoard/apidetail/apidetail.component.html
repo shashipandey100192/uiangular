@@ -1,4 +1,4 @@
-<p>apidetail works!</p>
+<!-- <p>apidetail works!</p> -->
 <!-- <ul>
     <li *ngFor="let a of posts">
         {{a.title}}
@@ -10,23 +10,23 @@
     <div class="col-12">
 
     
-<table class="table">
+<table class="table table-bordered border-primary">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">#ID</th>
+        <th scope="col">title</th>
+        <th scope="col">body text</th>
+        <th scope="col">User Id</th>
         <th> Action</th>
       </tr>
     </thead>
-    <tbody *ngFor="let a of posts">
-      <tr>
+    <tbody >
+      <tr *ngFor="let a of posts">
         <th scope="row">{{a.id}}</th>
         <td>{{a.title}}</td>
         <td>{{a.body}}</td>
         <td>{{a.userId}}</td>
-        <td> <button type="button" class="btn btn-sm btn-danger" [routerLink]="['/dashboard/apidetail',a.id]">submit {{a.id}}</button></td>
+        <td style="width:200px;"> <button type="button" class="btn btn-sm btn-danger" [routerLink]="['/dashboard/apidetail',a.id]">Show Details</button></td>
       </tr>
      
     </tbody>

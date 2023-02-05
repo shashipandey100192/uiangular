@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GenralService } from 'src/app/service/genral.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -7,23 +8,27 @@ import { GenralService } from 'src/app/service/genral.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit{
-constructor( private myservice: GenralService){}
-singled:any;
+  id:any;
+constructor( private myservice: GenralService, private myroute1:ActivatedRoute){}
+singled:any = [];
 
 ngOnInit():void
 {
-  this.singledata();
+ this.id = this.myroute1.snapshot.paramMap.get('id');
+ console.log(this.id);
+ this.singledata();
 }
 
 
-singledata()
-{
-  this.myservice.getsingledata().subscribe((y)=>{
-    this.singled = y;
+singledata() {
+  this.myservice.getsingledata(this.id).subscribe((x) => {
+    this.singled = x;
     console.log(this.singled);
-
-  })
+    // console.log(typeof(this.singled));
+  });
 }
+
+
 
 
 
