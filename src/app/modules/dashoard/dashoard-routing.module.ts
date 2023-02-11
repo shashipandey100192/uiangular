@@ -4,6 +4,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
 import { ApidetailComponent } from './apidetail/apidetail.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { Myform1Component } from './myform1/myform1.component';
+import { ParentComponent } from './parent/parent.component';
 import { ProductsComponent } from './products/products.component';
 
 
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path:'apidetail/:id',
     component:ProductsComponent
+  },
+  {
+    path:'inputoutput',
+    component:ParentComponent
   }
 
 ];

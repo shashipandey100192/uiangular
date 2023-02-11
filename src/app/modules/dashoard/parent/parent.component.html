@@ -1,0 +1,13 @@
+<div class="parent">
+<p>parent works!</p>
+
+
+<app-child [xyz]="myvariable"  (newItemEvent)="addItem($event)"></app-child>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+  
+  
+
+
+</div>

@@ -9,6 +9,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { ApidetailComponent } from './apidetail/apidetail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './products/products.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ProductsComponent } from './products/products.component';
     DirectiveComponent,
     ApidetailComponent,
     ProductsComponent,
+    ParentComponent,
+    ChildComponent,
  
   ],
   imports: [
