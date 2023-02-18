@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { ApidetailComponent } from './apidetail/apidetail.component';
+import { CustompageComponent } from './custompage/custompage.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { Myform1Component } from './myform1/myform1.component';
 import { ParentComponent } from './parent/parent.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'inputoutput',
     component:ParentComponent
+  },
+  {
+    path:'custompipe',
+    component:CustompageComponent
   }
 
 ];

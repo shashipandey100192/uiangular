@@ -45,7 +45,6 @@
                     formControlName="lastname"
                     class="form-control"
                     [ngClass]="{'is-invalid': submitted && f.lastname.errors }"
-                    pattern="[0-9]"
                 />
                 <div *ngIf="submitted && f.lastname.errors" class="errormsg">
                     <div *ngIf="f.lastname.errors.required">Last Name is required</div>

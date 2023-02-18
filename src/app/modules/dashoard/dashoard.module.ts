@@ -11,6 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './products/products.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { MychildComponent } from './mychild/mychild.component';
+import { CustompageComponent } from './custompage/custompage.component';
+import { MynumberPipe } from './custompipe/mynumber.pipe';
+import { CyearPipe } from './custompipe/cyear.pipe';
+import { MydirectiveDirective } from './customdirective/mydirective.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { ChildComponent } from './child/child.component';
     ProductsComponent,
     ParentComponent,
     ChildComponent,
+    MychildComponent,
+    CustompageComponent,
+    MynumberPipe,
+    CyearPipe,
+    MydirectiveDirective,
  
   ],
   imports: [

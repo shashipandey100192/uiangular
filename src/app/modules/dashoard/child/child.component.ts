@@ -9,7 +9,8 @@ export class ChildComponent {
 
 @Input() xyz: string | undefined
 
-@Output() newItemEvent = new EventEmitter<string>();
+@Output() newItemEvent = new EventEmitter<any>();
+
 addNewItem(value: string) {
   this.newItemEvent.emit(value);
 }
